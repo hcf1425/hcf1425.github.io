@@ -1,5 +1,16 @@
 # python requests 模块data与json参数区别
+
+**提示，requests模块在低于2.4.2版本时不支持使用json关键字方式进行传递参数**
+
+如果想要使用低于2.4.2的requests模块进行参数传递，则只能使用data进行传参：
+
+```
+headers = {"Content-Type": "application/json"}
+requsts.post(url, data=json.dumps(params),headers=headers)
+```
+
 requests.post()方法 源码如下：
+
 ~~~
 def post(url, data=None, json=None, **kwargs):
     r"""Sends a POST request.
