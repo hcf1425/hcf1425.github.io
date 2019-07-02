@@ -28,9 +28,7 @@ The default form widget for this field is a TextInput. The admin adds a JavaScri
 
 The options auto_now_add, auto_now, and default are mutually exclusive. Any combination of these options will result in an error.
 
-**Note:** As currently implemented, setting auto_now or auto_now_add to True will cause the field to have
-
-editable=False and blank=True set.
+**Note:** As currently implemented, setting auto_now or auto_now_add to True will cause the field to have editable=False and blank=True set.
 
 **Note: **The auto_now and auto_now_add options will always use the date in the default timezone at the moment of creation or update. If you need something different, you may want to consider simply using your own callable default or overriding save() instead of using auto_now or auto_now_add; or using a DateTimeField instead of a DateField and deciding how to handle the conversion from datetime to date at display time.
 
