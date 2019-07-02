@@ -1,4 +1,4 @@
-### 2019-07-02- django-auto_now-和- auto_now_add区别
+### django-auto_now-和- auto_now_add区别
 
 ### DateField
 
